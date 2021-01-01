@@ -5,7 +5,10 @@ function setup() {
         [brushSetup, brushDraw, brushClear],
         [rainSetup, rainDraw, rainClear],
         [pongSetup, pongDraw, pongClear],
-        [snakeSetup, snakeDraw, snakeClear]
+        [snakeSetup, snakeDraw, snakeClear],
+        [coinSetup, coinDraw, coinClear],
+        [frogSetup, frogDraw, frogClear],
+        [flappySetup, flappyDraw, flappyClear]
     ];
     position=0;
     switchButton=createButton('Next Module');
