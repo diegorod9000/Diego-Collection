@@ -110,9 +110,6 @@ class Snake { //The snake uses a linked list
         if (this.snake != null) {
             this.snake.showSelf();
         }
-        if (this.y > height || this.y < 0 || this.x < 0 || this.x > width) {
-            lives -= 1;
-        }
     }
 
     checkApples() {
@@ -127,6 +124,13 @@ class Snake { //The snake uses a linked list
 
     checkCollisions() {
         let iter = this.snake;
+        if (this.y > height || this.y < 0 || this.x < 0 || this.x > width) {
+            lives --;
+            if (lives <= 0){
+                gameIsOver=true;
+                return;
+            }
+        }
         while (iter != null) {
             if (collideRectRect(this.x, this.y, 9, 9, iter.x, iter.y, 9, 9)) {
                 lives--;

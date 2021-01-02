@@ -8,7 +8,9 @@ function setup() {
         [snakeSetup, snakeDraw, snakeClear],
         [coinSetup, coinDraw, coinClear],
         [frogSetup, frogDraw, frogClear],
-        [flappySetup, flappyDraw, flappyClear]
+        [flappySetup, flappyDraw, flappyClear],
+        [chaosSetup, chaosDraw, chaosClear],
+        [escapeSetup, escapeDraw, escapeClear]
     ];
     position=0;
     switchButton=createButton('Next Module');
